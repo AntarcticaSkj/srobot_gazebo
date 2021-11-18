@@ -16,4 +16,11 @@ roslaunch cartographer_ros srobot.launch
 ## Result
 The coordinate system of the wheel moves back and forth.
 The other coordinate systems stay put. 
+
+
+<p>
+   <a align="left" href="https://github.com/AntarcticaSkj/srobot_gazebo/blob/main/bad_result_rviz.png" target="_blank">
+   <img width="800" src="https://github.com/AntarcticaSkj/srobot_gazebo/blob/main/bad_result_rviz.png"></a>
+</p>
+
 Mapping failed.
