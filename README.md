@@ -2,7 +2,7 @@
 Make a simple robot in Gazebo
 
 
-## Start simulation
+## Start simulation & Control
 ~~~shell
 roslaunch srobot_gazebo simulation_robot.launch 
 sudo apt-get install ros-melodic-teleop-twist-keyboard
