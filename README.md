@@ -10,7 +10,7 @@ $ rosrun teleop_twist_keyboard teleop_twist_keyboard.py
 ~~~
 ## Cartographer 3D
 ~~~shell
-roslaunch cartographer_ros srobot.launch
+$ roslaunch cartographer_ros srobot.launch
 ~~~
 
 ## Result
