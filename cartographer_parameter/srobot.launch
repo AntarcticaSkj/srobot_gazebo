@@ -1,0 +1,19 @@
+<!-- -->
+<launch>
+  <param name="/use_sim_time" value="true" />
+	
+  <node name="cartographer_node" pkg="cartographer_ros"
+      type="cartographer_node" args="
+          -configuration_directory $(find cartographer_ros)/configuration_files
+          -configuration_basename srobot.lua"
+      output="screen">
+    <remap from="points2_1" to="horizontal_vlp16_link" />
+    <remap from="points2_2" to="vertical_vlp16_link" />
+  </node>
+
+  <node name="cartographer_occupancy_grid_node" pkg="cartographer_ros"
+      type="cartographer_occupancy_grid_node" args="-resolution 0.05" />
+
+  <node name="rviz" pkg="rviz" type="rviz" required="true"
+      args="-d $(find cartographer_ros)/configuration_files/demo_3d.rviz" />
+</launch>
