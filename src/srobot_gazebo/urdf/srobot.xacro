@@ -130,7 +130,7 @@
     <origin rpy="0 0 0" xyz="-0.10 0 -0.03"/>  
   </joint>  
   <!-- imu sensor -->
-  <link name="imu">  
+  <link name="imu_link">  
     <visual>  
       <geometry>  
         <box size="0.01 0.01 0.01"/>  
@@ -143,7 +143,7 @@
 
   <joint name="imu_joint" type="fixed">  
     <parent link="base_footprint"/>  
-    <child link="imu"/>  
+    <child link="imu_link"/>  
     <origin xyz="0.08 0 0.025"/>  
   </joint> 
 
